@@ -66,6 +66,70 @@
                 </div>
             </div>
         </section>
+        <section class="mainContent">
+            <article class="content">
+                <h3 class="content__subtitle">Tema 1. Contenedor de la cuadrícula</h3>
+                <p class="content__text">El contenedor de la cuadrícula es un elemento fundamental en CSS Grid. Es el
+                    elemento padre que contiene todos los elementos que formarán parte de la cuadrícula en el diseño de
+                    una página web. Al aplicar la propiedad <code>display: grid;</code> a este contenedor, se activa la
+                    funcionalidad
+                    de la cuadrícula en CSS. <br> La cuadrícula actúa como un lienzo sobre el cual se construye el
+                    diseño de la página. Al definir las reglas de la cuadrícula en el contenedor, puedes lograr una
+                    mayor flexibilidad y control en la disposición de los elementos, permitiendo diseños responsivos y
+                    adaptativos para diferentes tamaños de pantalla.</p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+}
+                    </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 2. Definición de columnas y filas</h3>
+                <p class="content__text">
+                    La definición de columnas y filas en CSS Grid se realiza mediante las propiedades
+                    <code>grid-template-columns</code> y <code>grid-template-rows</code>, respectivamente. Estas
+                    propiedades permiten establecer
+                    la estructura de la cuadrícula en términos de tamaño y cantidad de columnas y filas.
+                    <br>
+                    Al utilizar <code>grid-template-columns</code>, puedes definir el ancho y la cantidad de columnas en
+                    la cuadrícula. Puedes especificar los anchos de las columnas utilizando unidades de medida, como
+                    píxeles, porcentajes, fracciones, entre otros.
+                    <br>
+                    Por otro lado, con <code>grid-template-rows</code>, puedes definir el alto y la cantidad de filas en
+                    la cuadrícula. Al igual que en <code>grid-template-columns</code>, puedes establecer los altos
+                    utilizando unidades de medida o palabras clave.
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo2.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+    /* 3 columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 2 filas con tamaños específicos */
+    grid-template-rows: 100px 200px;
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 

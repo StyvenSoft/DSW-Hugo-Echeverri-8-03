@@ -14,6 +14,10 @@ h2 {
     text-align: center;
 }
 
+code {
+    color: #8ca2e3;
+}
+
 .container {
     display: grid;
     place-items: center;
@@ -100,14 +104,16 @@ h2 {
     height: 300px;
 }
 
-.activity__text p, .selectedTheme__column p {
+.activity__text p,
+.selectedTheme__column p {
     line-height: 1.7;
 }
 
 /* CLASES TEMA */
 
-.selectedTheme {
-    margin: 3rem 0;
+.selectedTheme,
+.mainContent {
+    padding: 3rem 0;
 }
 
 .selectedTheme__title {
@@ -134,4 +140,47 @@ h2 {
     margin: 0 auto;
     width: 400px;
     height: 300px;
+}
+
+/* CLASES SECTION CONTENIDO */
+
+.content {
+    padding-bottom: 3rem;
+}
+
+.content__subtitle {
+    text-align: center;
+}
+
+.content__text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.content__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.content__column {
+    padding: 1rem;
+}
+
+.content__image {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+.content__code {
+    background-color: #41474a;
+    padding: 1rem;
+}
+
+.content__code-text {
+    font-size: 1.1rem;
 }
