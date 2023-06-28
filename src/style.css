@@ -93,14 +93,45 @@ h2 {
 .activity__image {
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .activity__image img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
-.activity__text {
+.activity__text p, .selectedTheme__column p {
+    line-height: 1.7;
+}
+
+/* CLASES TEMA */
+
+.selectedTheme {
+    margin: 3rem 0;
+}
+
+.selectedTheme__title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.selectedTheme__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.selectedTheme__column {
     text-align: left;
+}
+
+.selectedTheme__subtitle {
+    margin-top: 0;
+}
+
+.selectedTheme__image {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
 }
