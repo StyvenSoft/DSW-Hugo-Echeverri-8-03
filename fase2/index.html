@@ -129,6 +129,120 @@
                     </div>
                 </div>
             </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 3. Posicionamiento de elementos</h3>
+                <p class="content__text">
+                    El posicionamiento de elementos en CSS Grid se logra mediante las propiedades <code>grid-row</code>
+                    y <code>grid-column</code>. Estas propiedades permiten especificar la ubicación de los elementos
+                    dentro de la cuadrícula en términos de filas y columnas.
+                    <br>
+                    Con <code>grid-row</code>, puedes definir en qué filas se ubicará un elemento. Puedes utilizar
+                    valores numéricos para indicar filas específicas, como 1 para la primera fila o 2 / 4 para las filas
+                    de la segunda a la cuarta. También puedes usar palabras clave como span para indicar que el elemento
+                    debe ocupar varias filas consecutivas.
+                    <br>
+                    Y el <code>grid-column</code> se utiliza para especificar en qué columnas se ubicará un elemento. Al
+                    igual que con grid-row, puedes utilizar valores numéricos para indicar columnas específicas o
+                    palabras clave como span para ocupar varias columnas consecutivas.
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo3.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo item:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.item {
+    /* El elemento ocupa las filas 1 y 2 */
+    grid-row: 1 / 3; 
+    /* El elemento ocupa las columnas 2 y 3 */
+    grid-column: 2 / 4;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 4. Espaciado entre filas y columnas</h3>
+                <p class="content__text">
+                    El espaciado entre filas y columnas en CSS Grid se puede controlar mediante la propiedad
+                    <code>grid-gap</code>.
+                    Esta propiedad te permite establecer el tamaño del espacio entre las filas y columnas de la
+                    cuadrícula, lo que proporciona un mejor control visual y separación entre los elementos.
+                    <br>
+                    La propiedad <code>grid-gap</code> acepta uno o dos valores, y se utiliza para especificar tanto el
+                    espacio
+                    horizontal como el vertical entre las filas y columnas de la cuadrícula. Puedes utilizar unidades de
+                    medida como píxeles, porcentajes o em, o también puedes utilizar palabras clave como auto, initial o
+                    inherit.
+                    <br>
+
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo4.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+    /* Espacio de 10 píxeles entre filas y columnas */
+    grid-gap: 10px; 
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 5. Alineación de elementos</h3>
+                <p class="content__text">
+                    La alineación de elementos en CSS Grid se logra mediante las propiedades <code>justify-items</code>,
+                    <code>align-items</code>,
+                    <code>justify-content</code> y <code>align-content</code>. Estas propiedades permiten controlar la
+                    posición y alineación de
+                    los elementos dentro de la cuadrícula en el eje horizontal (principal) y vertical (secundario).
+                    <br>
+                    CSS Grid te permiten controlar la alineación y distribución de los elementos dentro de la
+                    cuadrícula. Estas propiedades afectan tanto la alineación individual de los elementos en sus celdas
+                    como la alineación y distribución de los elementos en el eje horizontal y vertical de la cuadrícula.
+                    Experimenta con diferentes valores para lograr la disposición deseada y crear diseños armoniosos.
+                    <br>
+
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo5.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">.grid-container {
+    display: grid;
+    /* Centra los elementos horizontalmente */
+    justify-items: center; 
+    /* Centra los elementos verticalmente */
+    align-items: center; 
+    /* Distribuye el espacio sobrante entre las columnas */
+    justify-content: space-between; 
+    /* Distribuye el espacio sobrante entre las filas */
+    align-content: space-around; 
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="mockup">
+            <h2 class="mockup__title">Mockup del sitio Web</h2>
+            <div class="mockup__content">
+                <img src="../src/img/Mockup.jpg" alt="Mockup del sitio Web" class="mockup__image" />
+            </div>
         </section>
     </main>
 </body>

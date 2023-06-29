@@ -182,5 +182,26 @@ code {
 }
 
 .content__code-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+/* CLASES SECTION MOCKUP */
+
+.mockup {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mockup__title {
+    text-align: center;
+}
+
+.mockup__content {
+    display: flex;
+    justify-content: center;
+}
+
+.mockup__image {
+    width: 80%;
+    height: auto;
 }
