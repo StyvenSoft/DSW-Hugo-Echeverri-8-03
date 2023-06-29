@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: hsl(249.38deg, 48.48%, 12.94%);
+    background-color: hsl(249.38deg 48.48% 12.94% / 83%);
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -81,6 +81,10 @@ code {
 .nav__item {
     display: inline-block;
     padding: 10px;
+}
+
+.nav__item:hover {
+    background-color: #bcc6ff4d;
 }
 
 .nav__item a {
@@ -234,6 +238,7 @@ code {
 
 .about__subtitle {
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .about__image {
@@ -243,7 +248,7 @@ code {
 }
 
 .about__column .info {
-    margin-top: 3rem;
+    margin-top: 3.4rem;
 }
 
 .info {
