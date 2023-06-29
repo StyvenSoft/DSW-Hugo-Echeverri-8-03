@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +20,16 @@ h2 {
 
 code {
     color: #8ca2e3;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
 }
 
 .container {
@@ -94,7 +108,8 @@ code {
     gap: 2rem;
 }
 
-.activity__image {
+.activity__image,
+.about__image {
     display: flex;
     justify-content: center;
 }
@@ -204,4 +219,33 @@ code {
 .mockup__image {
     width: 80%;
     height: auto;
+}
+
+/* CLASES SECTION FOOTER */
+
+.about {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about__subtitle {
+    text-align: center;
+}
+
+.about__image {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.about__column .info {
+    margin-top: 3rem;
+}
+
+.info {
+    text-align: center;
 }
