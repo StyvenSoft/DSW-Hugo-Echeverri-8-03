@@ -39,6 +39,11 @@ body {
     cursor: pointer;
 }
 
+.menu__link:hover,
+.menu__item-side:hover {
+    background-color: #83c0cb;
+}
+
 /* main-wrapper */
 .main-wrapper {
     display: grid;
@@ -87,6 +92,16 @@ body {
 
 .selectedTheme__column {
     text-align: center;
+}
+
+.main__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.height-content {
+    height: 73vh;
 }
 
 /* footer */
