@@ -44,6 +44,40 @@ body {
     background-color: #83c0cb;
 }
 
+.content__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.content__column {
+    padding: 1rem;
+}
+
+.content__image {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+.content__code {
+    background-color: #41474a;
+    padding: 1rem;
+}
+
+.content__code-text {
+    font-size: 1rem;
+}
+
+code {
+    color: #8ca2e3;
+}
+
+.info__image {
+    border-radius: 50%;
+}
+
 /* main-wrapper */
 .main-wrapper {
     display: grid;

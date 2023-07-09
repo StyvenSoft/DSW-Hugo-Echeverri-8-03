@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="../fase3/css/style.css">
+    <title>Fase 3 - Inicio</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Diseño de Sitios Web - Fase 3 Diseñar</h1>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="../" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="../fase3/audio/" class="menu__link">Audio</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Tema</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-wrapper">
+        <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <ul class="nav__menu-side">
+                    <li class="menu__item-side"><a href="../" class="menu__link-side">Inicio</a></li>
+                    <li class="menu__item-side"><a href="../fase3/audio/" class="menu__link-side">Audio del tema</a>
+                    </li>
+                    <li class="menu__item-side"><a href="#" class="menu__link-side">Tema seleccionado</a></li>
+                    <li class="menu__item-side"><a href="../fase3/nosotros/" class="menu__link-side">Nosotros</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="selectedTheme">
+            <article class="content">
+                <h3 class="content__subtitle">Tema 1. Contenedor de la cuadrícula</h3>
+                <p class="content__text">El contenedor de la cuadrícula es un elemento fundamental en CSS Grid. Es el
+                    elemento padre que contiene todos los elementos que formarán parte de la cuadrícula en el diseño de
+                    una página web. Al aplicar la propiedad <code>display: grid;</code> a este contenedor, se activa la
+                    funcionalidad
+                    de la cuadrícula en CSS. <br> La cuadrícula actúa como un lienzo sobre el cual se construye el
+                    diseño de la página. Al definir las reglas de la cuadrícula en el contenedor, puedes lograr una
+                    mayor flexibilidad y control en la disposición de los elementos, permitiendo diseños responsivos y
+                    adaptativos para diferentes tamaños de pantalla.</p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+}
+                    </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 2. Definición de columnas y filas</h3>
+                <p class="content__text">
+                    La definición de columnas y filas en CSS Grid se realiza mediante las propiedades
+                    <code>grid-template-columns</code> y <code>grid-template-rows</code>, respectivamente. Estas
+                    propiedades permiten establecer
+                    la estructura de la cuadrícula en términos de tamaño y cantidad de columnas y filas.
+                    <br>
+                    Al utilizar <code>grid-template-columns</code>, puedes definir el ancho y la cantidad de columnas en
+                    la cuadrícula. Puedes especificar los anchos de las columnas utilizando unidades de medida, como
+                    píxeles, porcentajes, fracciones, entre otros.
+                    <br>
+                    Por otro lado, con <code>grid-template-rows</code>, puedes definir el alto y la cantidad de filas en
+                    la cuadrícula. Al igual que en <code>grid-template-columns</code>, puedes establecer los altos
+                    utilizando unidades de medida o palabras clave.
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo2.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+    /* 3 columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 2 filas con tamaños específicos */
+    grid-template-rows: 100px 200px;
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 3. Posicionamiento de elementos</h3>
+                <p class="content__text">
+                    El posicionamiento de elementos en CSS Grid se logra mediante las propiedades <code>grid-row</code>
+                    y <code>grid-column</code>. Estas propiedades permiten especificar la ubicación de los elementos
+                    dentro de la cuadrícula en términos de filas y columnas.
+                    <br>
+                    Con <code>grid-row</code>, puedes definir en qué filas se ubicará un elemento. Puedes utilizar
+                    valores numéricos para indicar filas específicas, como 1 para la primera fila o 2 / 4 para las filas
+                    de la segunda a la cuarta. También puedes usar palabras clave como span para indicar que el elemento
+                    debe ocupar varias filas consecutivas.
+                    <br>
+                    Y el <code>grid-column</code> se utiliza para especificar en qué columnas se ubicará un elemento. Al
+                    igual que con grid-row, puedes utilizar valores numéricos para indicar columnas específicas o
+                    palabras clave como span para ocupar varias columnas consecutivas.
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo3.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo item:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.item {
+    /* El elemento ocupa las filas 1 y 2 */
+    grid-row: 1 / 3; 
+    /* El elemento ocupa las columnas 2 y 3 */
+    grid-column: 2 / 4;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 4. Espaciado entre filas y columnas</h3>
+                <p class="content__text">
+                    El espaciado entre filas y columnas en CSS Grid se puede controlar mediante la propiedad
+                    <code>grid-gap</code>.
+                    Esta propiedad te permite establecer el tamaño del espacio entre las filas y columnas de la
+                    cuadrícula, lo que proporciona un mejor control visual y separación entre los elementos.
+                    <br>
+                    La propiedad <code>grid-gap</code> acepta uno o dos valores, y se utiliza para especificar tanto el
+                    espacio
+                    horizontal como el vertical entre las filas y columnas de la cuadrícula. Puedes utilizar unidades de
+                    medida como píxeles, porcentajes o em, o también puedes utilizar palabras clave como auto, initial o
+                    inherit.
+                    <br>
+
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo4.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">
+.grid-container {
+    display: grid;
+    /* Espacio de 10 píxeles */
+    grid-gap: 10px; 
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="content">
+                <h3 class="content__subtitle">Tema 5. Alineación de elementos</h3>
+                <p class="content__text">
+                    La alineación de elementos en CSS Grid se logra mediante las propiedades <code>justify-items</code>,
+                    <code>align-items</code>,
+                    <code>justify-content</code> y <code>align-content</code>. Estas propiedades permiten controlar la
+                    posición y alineación de
+                    los elementos dentro de la cuadrícula en el eje horizontal (principal) y vertical (secundario).
+                    <br>
+                    CSS Grid te permiten controlar la alineación y distribución de los elementos dentro de la
+                    cuadrícula. Estas propiedades afectan tanto la alineación individual de los elementos en sus celdas
+                    como la alineación y distribución de los elementos en el eje horizontal y vertical de la cuadrícula.
+                    Experimenta con diferentes valores para lograr la disposición deseada y crear diseños armoniosos.
+                    <br>
+
+                </p>
+                <div class="content__columns">
+                    <div class="content__column">
+                        <img src="../src/img/ejemplo5.jpg" alt="Ejemplo" class="content__image" />
+                    </div>
+                    <div class="content__column">
+                        <p>Ejemplo container:</p>
+                        <div class="content__code">
+                            <pre><code class="content__code-text">.grid-container {
+    display: grid;
+    /* Centra los elementos horizontalmente */
+    justify-items: center; 
+    /* Centra los elementos verticalmente */
+    align-items: center; 
+    justify-content: space-between; 
+    align-content: space-around; 
+}
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p><i>Desarrollado por Hugo Steveen Echeverri Silva</i></p>
+    </footer>
+</body>
+
+</html>
