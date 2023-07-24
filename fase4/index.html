@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="../fase3/css/style.css">
+    <title>Fase 4 - Cuestionario</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Diseño de Sitios Web - Fase 3 Diseñar</h1>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="../" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="../fase3/audio/" class="menu__link">Audio</a></li>
+                <li class="menu__item"><a href="../fase3/tema.html" class="menu__link">Tema</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-wrapper">
+        <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <ul class="nav__menu-side">
+                    <li class="menu__item-side"><a href="../" class="menu__link-side">Inicio</a></li>
+                    <li class="menu__item-side"><a href="../fase3/audio/" class="menu__link-side">Audio del tema</a></li>
+                    <li class="menu__item-side"><a href="../fase3/tema.html" class="menu__link-side">Tema seleccionado</a></li>
+                    <li class="menu__item-side"><a href="../fase3/nosotros/" class="menu__link-side">Nosotros</a></li>
+                    <li class="menu__item-side"><a href="../fase4/" class="menu__link-side">Cuestionario</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="selectedTheme">
+            <h1 class="selectedTheme__subtitle">Cuestionario</h1>
+            <h3>Responda las siguientes preguntas</h3>
+            <div>
+                <form name="questionnaireForm">
+                    <h4>1)  ¿Qué propiedad de CSS Grid se utiliza para establecer el tamaño de las columnas en una cuadrícula?</h4>
+                    <div>
+                        <input type="radio" name="r1" value="a">
+                        <label for="a"> a. grid-template-columns</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r1" value="b">
+                        <label for="b"> b. grid-column</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r1" value="c">
+                        <label for="c"> c. grid-row</label>
+                    </div>
+
+                    <h4>2)  ¿Cuál es el valor predeterminado de la propiedad "grid-template-rows" si no se especifica ningún valor?</h4>
+                    <div>
+                        <input type="radio" name="r2" value="a">
+                        <label for="a"> a. 1fr</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r2" value="b">
+                        <label for="b"> b. auto</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r2" value="c">
+                        <label for="c"> c. 100px</label>
+                    </div>
+
+                    <h4>3)  ¿Qué propiedad de CSS Grid se utiliza para especificar el número de columnas o filas que una celda del grid debe ocupar?</h4>
+                    <div>
+                        <input type="radio" name="r3" value="a">
+                        <label for="a"> a. grid-template-areas</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r3" value="b">
+                        <label for="b"> b. grid-column</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r3" value="c">
+                        <label for="c"> c. grid-row</label>
+                    </div>
+
+                    <h4>4)  ¿Cuál de las siguientes afirmaciones es cierta acerca de CSS Grid?</h4>
+                    <div>
+                        <input type="radio" name="r4" value="a">
+                        <label for="a"> a. Solo se puede aplicar a elementos &lt;table&gt;.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r4" value="b">
+                        <label for="b"> b. Reemplaza por completo a Flexbox como método de diseño en CSS.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r4" value="c">
+                        <label for="c"> c. Es una técnica de diseño bidimensional que permite organizar elementos en filas y columnas.</label>
+                    </div>
+
+                    <h4>5) ¿Cuál de las siguientes afirmaciones es cierta acerca de "grid-gap" en CSS Grid?</h4>
+                    <div>
+                        <input type="radio" name="r5" value="a">
+                        <label for="a"> a. Es una abreviatura para las propiedades "grid-row-gap" y "grid-column-gap"</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r5" value="b">
+                        <label for="b"> b. Establece el tamaño de los elementos del grid.</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="r5" value="c">
+                        <label for="c"> c. No es compatible con la mayoría de los navegadores modernos.</label>
+                    </div>
+                    <br>
+                    <input class="menu__link" type="button" value="Enviar" onclick="processResponses()">
+                    <p>
+                        <h3 id="result"></h3>
+                    </p>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <p><i>Desarrollado por Hugo Steveen Echeverri Silva</i></p>
+    </footer>
+    <script src="./js/main.js" ></script>
+</body>
+
+</html>
